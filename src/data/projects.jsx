@@ -1,5 +1,12 @@
 export const projects = [
         {
+            title: "Pet Grooming Website",
+            description: "A full-stack landing page for a pet grooming business, featuring responsive design, service highlights, and includes a Node.js + Express backend connected to Supabase for authentication and booking management.",
+            tech: ["React", "TailwindCSS", "Vite", "Node.js", "Express", "Supabase"],
+            link: "https://halfian.github.io/pet-grooming/",
+            image: "/images/pet-grooming.png"
+        },
+        {
             title: "Hana Cosmetic Homepage",
             description: "A modern landing page for a cosmetic brand, featuring responsive design, product highlights, and a clean UI built with React and TailwindCSS.",
             tech: ["React", "TailwindCSS", "Vite"],
