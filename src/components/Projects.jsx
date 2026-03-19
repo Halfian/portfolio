@@ -6,7 +6,7 @@ export default function Projects() {
             <h2 className="text-4xl font-poppins font-bold text-center text-[#007FFF] mb-12">
                 Projects
             </h2>
-            <div className="grid gap-8 md:grid-cols-3">
+            <div className="grid gap-8 md:grid-cols-2">
                 {projects.map((project, index) => (
                     <div key={index} className="bg-white rounded-xl shadow-lg p-6 flex flex-col justify-between hover:shadow-xl hover:scale-[1.02] transition-transform transition-colors duration-200 border border-gray-200 hover:border-[#007FFF]">
                         <div>
