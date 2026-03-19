@@ -8,6 +8,8 @@ export default function TechStack() {
     { name: "Zustand", logo: "🐻", type: "emoji" },
     { name: "TailwindCSS", logo: "https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white", type: "img" },
     { name: "Firebase", logo: "🔥", type: "emoji" },
+    { name: "Express", logo: "https://img.shields.io/badge/Express-000000?logo=express&logoColor=white", type: "img" },
+    { name: "Supabase", logo: "https://img.shields.io/badge/Supabase-3ECF8E?logo=supabase&logoColor=white", type: "img" }
   ];
 
 
