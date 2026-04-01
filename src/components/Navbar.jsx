@@ -1,22 +1,35 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+        setScrolled(window.scrollY > window.innerHeight * 0.7); 
+        // toggles after ~70% of hero height
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
 
     return (
-        <nav className="fixed top-0 left-0 w-full bg-[#007FFF] shadow-md z-50">
+        <nav className={`fixed top-0 left-0 w-full z-50 transition-colors duration-500 ${
+        scrolled ? "bg-white/90 backdrop-blur-md shadow-md" : "bg-transparent backdrop-blur-md"
+      }`}
+>
             <div className="flex items-center justify-between px-6 py-4 md:px-12">
                 <div className="flex items-center gap-2">
                     <img src="/favicon.png" alt="H logo" className="w-8 h-8 bg-white rounded-full" />
-                    <h1 className="text-2xl font-poppins font-bold text-white">Halfian</h1>
+                    <h1 className="text-2xl font-poppins font-bold text-[#007FFF]">Halfian</h1>
                 </div>
-                <ul className="hidden md:flex gap-8 font-inter font-semibold text-white transition-colors duration-200">
-                    <li><a href="#hero" className="hover:text-gray-200">Home</a></li>
-                    <li><a href="#techstack" className="hover:text-gray-200">Tech Stack</a></li>
-                    <li><a href="#projects" className="hover:text-gray-200">Projects</a></li>
-                    <li><a href="#about" className="hover:text-gray-200">About</a></li>
-                    <li><a href="#contact" className="hover:text-gray-200">Contact</a></li>
+                <ul className="hidden md:flex gap-8 font-inter font-semibold text-black transition-colors duration-200">
+                    <li><a href="#hero" className="hover:text-[#007FFF]">Home</a></li>
+                    <li><a href="#techstack" className="hover:text-[#007FFF]">Tech Stack</a></li>
+                    <li><a href="#projects" className="hover:text-[#007FFF]">Projects</a></li>
+                    <li><a href="#about" className="hover:text-[#007FFF]">About</a></li>
+                    <li><a href="#contact" className="hover:text-[#007FFF]">Contact</a></li>
                 </ul>
                 <button
                     className="md:hidden text-2xl text-white"

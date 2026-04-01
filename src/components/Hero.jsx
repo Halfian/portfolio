@@ -1,19 +1,67 @@
+import { useEffect, useRef } from "react";
+
 export default function Hero() {
+    const circlesRef = useRef([]);
+
+    useEffect(() => {
+        circlesRef.current.forEach((circle, i) => {
+            let angle = 0;
+            let speed = i === 0 ? 6 : i === 1 ? -3 : 1;
+
+            const update = () => {
+                angle = (angle + speed) % 360;
+                if (circle) circle.style.transform = `rotate(${angle}deg)`;
+            };
+
+            const interval = setInterval(update, 1000);
+
+            // On hover, temporarily increase speed
+            circle?.parentElement?.addEventListener("mouseenter", () => {
+            speed *= 8;
+            });
+            circle?.parentElement?.addEventListener("mouseleave", () => {
+            speed = i === 0 ? 6 : i === 1 ? -3 : 1;
+            });
+
+            return () => clearInterval(interval);
+        });
+        }, []);
+
     return (
         <section 
             id="hero" 
-            className="scroll-mt-28 relative min-h-screen flex flex-col items-center justify-center text-center bg-white pt-20 px-6 md:flex-row md:items-center md:justify-center md:gap-12 md:px-12 overflow-hidden"
-        >            
-            <div className="absolute inset-0 bg-[repeating-linear-gradient(0deg,#f0f9ff,#f0f9ff_3px,transparent_5px,transparent_50px)] opacity-70"></div>
-            <div className="relative md:order-first">
-                <div className="absolute inset-0 w-40 h-40 rounded-full bg-[#007FFF] blur-xl opacity-20"></div>
+            className="scroll-mt-28 relative min-h-screen flex flex-col items-center justify-center text-center bg-slate-100 pt-35 px-6 md:flex-row md:items-center md:justify-center md:px-32  max-w-6xl mx-auto"
+        >      
+            {/* Background line texture */}
+            <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,#f0f9ff,#f0f9ff_3px,transparent_5px,transparent_60px)] opacity-50"></div>    
+            {/* Photo + circles */}
+            <div className="relative md:order-first z-10 flex items-center justify-center w-[20rem] md:ml-20 cursor-pointer">
+                <div
+                    ref={(el) => (circlesRef.current[0] = el)}
+                    className="absolute w-64 h-64 rounded-full opacity-60 
+                            bg-[conic-gradient(#1e90ff_0deg_180deg,#00bfff_180deg_360deg)]"
+                ></div>
+                <div
+                    ref={(el) => (circlesRef.current[1] = el)}
+                    className="absolute w-[21rem] h-[21rem] rounded-full opacity-50 
+                            bg-[conic-gradient(#6a5acd_0deg_180deg,#9370db_180deg_360deg)]"
+                ></div>
+                <div
+                    ref={(el) => (circlesRef.current[2] = el)}
+                    className="absolute w-[26rem] h-[26rem] rounded-full opacity-40 
+                            bg-[conic-gradient(#87cefa_0deg_180deg,#e6e6fa_180deg_360deg)] hidden md:block"
+                ></div>
+
+                {/* Foreground photo */}
                 <img
                     src="/IMG_3519.webp"
                     alt="Photo of Halfian, frontend developer"
-                    className="w-48 h-48 rounded-full shadow-lg mb-6 md:mb-0 object-cover object-top border-4 border-white relative z-10"
+                    className="w-48 h-48 rounded-full shadow-lg object-cover object-top border-4 border-white relative z-10"
                 />
             </div>
-            <div className="text-center md:text-left max-w-xl relative z-10">
+
+            {/* Text block */}
+            <div className="text-center mt-20 md:text-left max-w-xl relative z-10 md:ml-40 md:mt-10">
                 <h1 className="text-5xl font-poppins font-bold bg-gradient-to-r from-[#007FFF] to-sky-400 bg-clip-text text-transparent drop-shadow-md">
                     Hi, I'm Halfian
                 </h1>
