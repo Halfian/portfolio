@@ -30,10 +30,11 @@ export default function Hero() {
     return (
         <section 
             id="hero" 
-            className="scroll-mt-28 relative min-h-screen flex flex-col items-center justify-center text-center bg-slate-100 pt-35 px-6 md:flex-row md:items-center md:justify-center md:px-32  max-w-6xl mx-auto"
+            className="scroll-mt-28 relative min-h-screen flex flex-col items-center justify-center text-center bg-slate-100 pt-35 px-6 md:flex-row md:items-center md:justify-center md:px-32"
         >      
             {/* Background line texture */}
             <div className="absolute inset-0 bg-[repeating-linear-gradient(45deg,#f0f9ff,#f0f9ff_3px,transparent_5px,transparent_60px)] opacity-50"></div>    
+            
             {/* Photo + circles */}
             <div className="relative md:order-first z-10 flex items-center justify-center w-[20rem] md:ml-20 cursor-pointer">
                 <div
