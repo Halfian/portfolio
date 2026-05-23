@@ -1,7 +1,7 @@
 export const projects = [
         {
             title: "Runs-and-Bunce",
-            description: "A request management system with form handling, validation, and workflow tracking. Focused on usability and robust state management.",
+            description: "A futuristic dashboard to prepare for the Kuala Lumpur Standard Chartered (KLSC) Marathon 2026. Built to track runs, plan training, and manage trip & gear budgets - all in one neon-styled app.",
             tech: ["React", "Vite", "TailwindCSS"],
             link: "https://runs-and-bunce.vercel.app/",
             image: "/images/Runs-n-bunce.png"
