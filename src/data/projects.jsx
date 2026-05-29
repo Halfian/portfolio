@@ -4,6 +4,7 @@ export const projects = [
             description: "A futuristic dashboard to prepare for the Kuala Lumpur Standard Chartered (KLSC) Marathon 2026. Built to track runs, plan training, and manage trip & gear budgets - all in one neon-styled app.",
             tech: ["React", "Vite", "TailwindCSS"],
             link: "https://runs-and-bunce.vercel.app/",
+            github: "https://github.com/Halfian/runs-and-bunce",
             image: "/images/Runs-n-bunce.png"
         },
         {
@@ -11,6 +12,7 @@ export const projects = [
             description: "A full-stack landing page for a pet grooming business, featuring responsive design, service highlights, and includes a Node.js + Express backend connected to Supabase for authentication and booking management.",
             tech: ["React", "TailwindCSS", "Vite", "Node.js", "Express", "Supabase"],
             link: "https://halfian.github.io/pet-grooming/",
+            github: "https://github.com/Halfian/pet-grooming",
             image: "/images/pet-grooming.png"
         },
         {
@@ -18,6 +20,7 @@ export const projects = [
             description: "A modern landing page for a cosmetic brand, featuring responsive design, product highlights, and a clean UI built with React and TailwindCSS.",
             tech: ["React", "TailwindCSS", "Vite"],
             link: "https://halfian.github.io/cosmetic-page/",
+            github: "https://github.com/Halfian/cosmetic-page",
             image: "/images/hana-cosmetic.png"
         },
         {
@@ -25,6 +28,7 @@ export const projects = [
             description: "A developer focused library of reusable UI components, designed for scalability and clean logic. Built with React and Zustand.",
             tech: ["React", "Zustand", "TailwindCSS"],
             link: "https://halfian.github.io/component-forge/",
+            github: "https://github.com/Halfian/component-forge",
             image: "/images/component-forge.png"
         },        
     ];
