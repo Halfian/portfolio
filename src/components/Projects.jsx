@@ -29,22 +29,24 @@ export default function Projects() {
                                 ))}
                             </div>
                         </div>
-                        <a 
-                            href={project.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-auto inline-block px-4 py-2 bg-[#007FFF] text-white rounded-lg font-poppins font-semibold hover:bg-[#005FCC] transition-colors duration-200 text-center"
-                        >
-                            View Project
-                        </a>
-                        <a 
-                            href={project.github}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="mt-auto inline-block px-4 py-2 bg-[#007FFF] text-white rounded-lg font-poppins font-semibold hover:bg-[#005FCC] transition-colors duration-200 text-center"
-                        >
-                            GitHub Repo
-                        </a>
+                        <div className="mt-auto flex gap-3">
+                            <a 
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 bg-[#007FFF] text-white rounded-lg font-poppins font-semibold hover:bg-[#005FCC] transition-colors duration-200 text-center"
+                            >
+                                View Project
+                            </a>
+                            <a 
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="px-4 py-2 bg-[#007FFF] text-white rounded-lg font-poppins font-semibold hover:bg-[#005FCC] transition-colors duration-200 text-center"
+                            >
+                                GitHub Repo
+                            </a>
+                        </div>
                     </div>
                 ))}
             </div>
