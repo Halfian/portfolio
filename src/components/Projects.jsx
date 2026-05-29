@@ -29,7 +29,7 @@ export default function Projects() {
                                 ))}
                             </div>
                         </div>
-                        <div className="mt-auto flex gap-3">
+                        <div className="mt-auto flex gap-3 justify-center">
                             <a 
                                 href={project.link}
                                 target="_blank"
