@@ -26,7 +26,7 @@ export const projects = [
         {
             title: "Component-Forge",
             description: "A dynamic component builder and sandbox that allows developers to preview and customize reusable UI elements. Implemented Zustand for lightweight, global state tracking of active components, reducing re-renders across the preview canvas.",
-            tech: ["React", "Zustand", "TailwindCSS"],
+            tech: ["React", "TypeScript", "Zustand", "TailwindCSS"],
             link: "https://halfian.github.io/component-forge/",
             github: "https://github.com/Halfian/component-forge",
             image: "/images/component-forge.png"

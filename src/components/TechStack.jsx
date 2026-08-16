@@ -3,6 +3,7 @@ export default function TechStack() {
     { name: "HTML5", logo: "https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white", type: "img" },
     { name: "CSS3", logo: "https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white", type: "img" },
     { name: "JavaScript", logo: "https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black", type: "img" },
+    { name: "TypeScript", logo: "https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white", type: "img" },
     { name: "React", logo: "⚛️", type: "emoji" },
     { name: "Vite", logo: "🚀", type: "emoji" },
     { name: "Zustand", logo: "🐻", type: "emoji" },
