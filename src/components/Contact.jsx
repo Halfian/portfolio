@@ -43,8 +43,11 @@ export default function Contact() {
                     hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
                 >
                    <FaLinkedin size={22} />
-                </a>
+                </a>                
             </div>
+            <p className="mt-8 text-sm text-gray-500 italic">
+                    Let’s build something amazing together ✨
+            </p>
         </section>
     )
 }
