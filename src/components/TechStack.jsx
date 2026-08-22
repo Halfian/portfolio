@@ -15,7 +15,7 @@ export default function TechStack() {
 
 
     return (
-        <section id="techstack" className="py-16 bg-[var(--app-bg)] text-center scroll-mt-28">
+        <section id="techstack" className="px-25 py-20 bg-[var(--app-card)] text-center scroll-mt-28">
             <h2 className="text-3xl font-bold text-[var(--app-fg)] mb-8 font-[var(--font-poppins)]">
                 Tech Stack
             </h2>
