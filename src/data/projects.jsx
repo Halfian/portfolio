@@ -11,7 +11,7 @@ export const projects = [
             title: "Pet Grooming Website",
             description: "A full-stack booking system for local service businesses. Built a secure Node.js/Express backend integrated with Supabase to handle user authentication and relational database storage for appointments, resolving potential booking conflicts server-side.",
             tech: ["React", "TailwindCSS", "Vite", "Node.js", "Express", "Supabase"],
-            link: "https://halfian.github.io/pet-grooming/",
+            link: "https://pet-grooming-neon.vercel.app/",
             github: "https://github.com/Halfian/pet-grooming",
             image: "/images/pet-grooming.png"
         },
