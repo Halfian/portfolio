@@ -15,9 +15,9 @@ export default function ThemeToggle() {
     return (
         <button
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="p-2 rounded border border-[var(--app-line)] cursor-pointer hover:bg-[var(--app-line)] transition"
+            className="p-2 rounded border border-(--app-line) cursor-pointer hover:bg-(--app-line) transition"
         >
-            {theme === "dark" ? (<MoonIcon className="w-5 h-5 text-[var(--app-accent)]" />) : (<SunIcon className="w-5 h-5 text-[var(--app-accent)]" />)}
+            {theme === "dark" ? (<MoonIcon className="w-5 h-5 text-(--app-accent)" />) : (<SunIcon className="w-5 h-5 text-(--app-accent)" />)}
         </button>
     )
 };

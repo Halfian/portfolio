@@ -4,13 +4,13 @@ export default function Contact() {
     return (
         <section
             id="contact"
-            className="scroll-mt-28 bg-[var(--app-bg)] py-20 px-6 md:px-12 text-center"
+            className="scroll-mt-28 bg-(--app-bg) py-20 px-6 md:px-12 text-center"
         >
-            <h2 className="text-4xl font-[var(--font-poppins)] font-bold bg-gradient-to-r 
-                from-[var(--app-accent)] to-[var(--app-accent-alt)] text-transparent bg-clip-text drop-shadow-md mb-6">
+            <h2 className="text-4xl font-(--font-poppins)bg-linear-to-r 
+                from-(--app-accent) to-(--app-accent-alt) text-transparent bg-clip-text drop-shadow-md mb-6">
                 Contact Me
             </h2>
-            <p className="text-[var(--app-fg)] font-[var(--font-inter)] mb-8 max-w-xl mx-auto">
+            <p className="text-(--app-fg) font-(--font-inter) mb-8 max-w-xl mx-auto">
                 Whether you're a recruiter, collaborator, or fellow developer, feel free to reach out. I'm always open to new opportunities and creative projects.
             </p>
             <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-8">
@@ -18,8 +18,8 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Github"
-                    className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r 
-                    from-[var(--app-accent)] to-[var(--app-accent-alt)] text-[var(--app-fg)] shadow-md
+                    className="w-14 h-14 flex items-center justify-center rounded-full bg-linear-to-r 
+                    from-(--app-accent) to-(--app-accent-alt) text-(--app-fg) shadow-md
                     hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
                 >
                     <FaGithub size={22} />
@@ -28,8 +28,8 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Email Me"
-                    className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r
-                    from-[var(--app-accent)] to-[var(--app-accent-alt)] text-[var(--app-fg)] shadow-md 
+                    className="w-14 h-14 flex items-center justify-center rounded-full bg-linear-to-r
+                    from-(--app-accent) to-(--app-accent-alt) text-(--app-fg) shadow-md 
                     hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
                 >
                    <FaEnvelope size={22} />
@@ -38,8 +38,8 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     title="LinkedIn"
-                    className="w-14 h-14 flex items-center justify-center rounded-full bg-gradient-to-r 
-                    from-[var(--app-accent)] to-[var(--app-accent-alt)] text-[var(--app-fg)] shadow-md 
+                    className="w-14 h-14 flex items-center justify-center rounded-full bg-linear-to-r 
+                    from-(--app-accent) to-(--app-accent-alt) text-(--app-fg) shadow-md 
                     hover:scale-105 hover:shadow-lg transition-transform duration-300 ease-in-out"
                 >
                    <FaLinkedin size={22} />

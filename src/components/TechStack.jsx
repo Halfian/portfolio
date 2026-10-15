@@ -15,26 +15,26 @@ export default function TechStack() {
 
 
     return (
-        <section id="techstack" className="px-25 py-20 bg-[var(--app-card)] text-center scroll-mt-28">
-            <h2 className="text-3xl font-bold text-[var(--app-fg)] mb-8 font-[var(--font-poppins)]">
+        <section id="techstack" className="px-25 py-20 bg-(--app-card) text-center scroll-mt-28">
+            <h2 className="text-3xl text-(--app-fg) mb-8 font-(--font-poppins)">
                 Tech Stack
             </h2>
             <div className="flex flex-wrap justify-center gap-8">
                 {skills.map((skill) => (
                     <div
                         key={skill.name}
-                        className="flex items-center gap-2 bg-gradient-to-r from-[var(--app-accent)] 
-                        to-[var(--app-accent-alt)] px-4 py-2 rounded-lg shadow-md hover:scale-105 
-                        hover:shadow-lg hover:from-[var(--app-accent-alt)] hover:to-[var(--app-accent)] 
+                        className="flex items-center gap-2 bg-linear-to-r from-(--app-accent) 
+                        to-(--app-accent-alt) px-4 py-2 rounded-lg shadow-md hover:scale-105 
+                        hover:shadow-lg hover:from-(--app-accent-alt) hover:to-(--app-accent) 
                         transition-all duration-300 ease-in-out"
                     >
                         {skill.type === "img" ? (
                             <img src={skill.logo} alt={skill.name} className="h-6" />
                         ) : (
                             <span className="text-xl flex items-center justify-center w-8 h-8 rounded-full 
-                            bg-[var(--app-card)] shadow">{skill.logo}</span>
+                            bg-(--app-card) shadow">{skill.logo}</span>
                         )}
-                        <span className="font-[var(--font-inter)] font-medium text-white">{skill.name}</span>
+                        <span className="font-(--font-inter) text-white">{skill.name}</span>
                     </div>
                 ))}
             </div>

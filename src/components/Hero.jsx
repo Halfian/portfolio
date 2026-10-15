@@ -9,8 +9,8 @@ export default function Hero() {
                         md:items-center md:justify-center md:px-32"
             >      
             {/* Sky gradient background */}
-            <div className="absolute inset-0 z-0 bg-gradient-to-b from-[var(--hero-top)] 
-                via-[var(--hero-mid)] to-[var(--hero-bottom)] backdrop-blur-sm"></div>
+            <div className="absolute inset-0 z-0 bg-linear-to-b from-(--hero-top) 
+                via-(--hero-mid) to-(--hero-bottom) backdrop-blur-sm"></div>
 
             {/* Cloud layer */}
             <div className="absolute inset-0 z-10">
@@ -41,7 +41,7 @@ export default function Hero() {
 
             {/* Foreground photo */}
             <div className="relative z-20 md:order-first flex items-center justify-center w-[20rem] 
-                h-[20rem] md:w-[22rem] md:h-[22rem] lg:w-[24rem] lg:h-[24rem] cursor-pointer">
+                h-80 md:w-88 md:h-88 lg:w-96 lg:h-96 cursor-pointer">
                 <img
                 src="/IMG_3519.webp"
                 alt="Photo of Halfian, frontend developer"
@@ -52,17 +52,17 @@ export default function Hero() {
 
             {/* Text block */}
             <div className="text-center mt-20 md:text-left max-w-xl relative z-20 md:ml-40 md:mt-10">
-                <h1 className="text-5xl font-[var(--font-poppins)] font-bold bg-gradient-to-r from-[var(--app-accent)] to-[var(--app-fg)] bg-clip-text text-transparent drop-shadow-md">
+                <h1 className="text-5xl font-(--font-poppins) bg-linear-to-r from-(--app-accent) to-(--app-fg) bg-clip-text text-transparent drop-shadow-md">
                 Hi, I'm Halfian
                 </h1>
-                <h2 className="text-2xl text-[var(--app-fg)] font-[var(--font-poppins)] font-bold tracking-wide mt-3 drop-shadow-sm">
+                <h2 className="text-2xl text-(--app-fg) font-(--font-poppins) tracking-wide mt-3 drop-shadow-sm">
                 Frontend Developer
                 </h2>
-                <p className="text-gray-500 italic mt-4 font-[var(--font-inter)]">
+                <p className="text-gray-500 italic mt-4 font-(--font-inter)">
                 Web developer passionate about building clean, scalable, and responsive web apps.
                 </p>
                 <a href="#projects" 
-                className="mt-6 inline-block px-6 py-3 bg-gradient-to-r from-[var(--app-accent)] to-[var(--app-accent-alt)] text-white rounded-lg font-semibold font-[var(--font-poppins)] hover:from-[var(--app-accent-alt)] hover:to-[var(--app-accent)] hover:scale-105 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-[var(--app-accent)] transition-all duration-300 ease-in-out"
+                className="mt-6 inline-block px-6 py-3 bg-linear-to-r from-(--app-accent) to-(--app-accent-alt) text-white rounded-lg font-(--font-poppins) hover:from-(--app-accent-alt) hover:to-(--app-accent) hover:scale-105 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-(--app-accent) transition-all duration-300 ease-in-out"
                 aria-label="View my projects"
                 >
                 View My Work
