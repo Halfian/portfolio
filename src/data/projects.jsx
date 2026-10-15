@@ -5,7 +5,7 @@ export const projects = [
             tech: ["React", "TypeScript", "Zustand", "TailwindCSS"],
             link: "https://halfian.github.io/component-forge/",
             github: "https://github.com/Halfian/component-forge",
-            image: "/images/component-forge-darkTheme.png"
+            image: "/images/component-forge-darkTheme.webp"
         }, 
         {
             title: "Pet Grooming Website",
@@ -13,7 +13,7 @@ export const projects = [
             tech: ["React", "TailwindCSS", "Vite", "Node.js", "Express", "Supabase"],
             link: "https://pet-grooming-neon.vercel.app/",
             github: "https://github.com/Halfian/pet-grooming",
-            image: "/images/ss-hero.png"
+            image: "/images/ss-hero.webp"
         },
         {
             title: "Hana Cosmetic Homepage",
@@ -21,7 +21,7 @@ export const projects = [
             tech: ["React", "TailwindCSS", "Vite"],
             link: "https://halfian.github.io/cosmetic-page/",
             github: "https://github.com/Halfian/cosmetic-page",
-            image: "/images/hana-cosmetic.png"
+            image: "/images/hana-cosmetic.webp"
         },
         {
             title: "Runs-and-Bunce",
@@ -29,6 +29,6 @@ export const projects = [
             tech: ["React", "Vite", "TailwindCSS"],
             link: "https://runs-and-bunce.vercel.app/",
             github: "https://github.com/Halfian/runs-and-bunce",
-            image: "/images/Runs-n-bunce.png"
+            image: "/images/Runs-n-bunce.webp"
         },       
     ];
