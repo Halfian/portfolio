@@ -6,11 +6,11 @@ export default function Contact() {
             id="contact"
             className="scroll-mt-28 bg-(--app-bg) py-20 px-6 md:px-12 text-center"
         >
-            <h2 className="text-4xl font-(--font-poppins)bg-linear-to-r 
+            <h2 className="text-4xl font-bold font-poppins bg-linear-to-r 
                 from-(--app-accent) to-(--app-accent-alt) text-transparent bg-clip-text drop-shadow-md mb-6">
                 Contact Me
             </h2>
-            <p className="text-(--app-fg) font-(--font-inter) mb-8 max-w-xl mx-auto">
+            <p className="text-(--app-fg)/80 font-inter mb-8 max-w-xl mx-auto leading-relaxed text-base md:text-lg">
                 Whether you're a recruiter, collaborator, or fellow developer, feel free to reach out. I'm always open to new opportunities and creative projects.
             </p>
             <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-8">

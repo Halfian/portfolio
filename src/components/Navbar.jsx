@@ -25,14 +25,14 @@ export default function Navbar() {
                     <div className="flex items-center gap-2">
                         <img src="/favicon.webp" alt="H logo" className="w-8 h-8 bg-linear-to-r 
                             from-(--app-accent) to-(--app-line) p-1 shadow-md rounded-full" />
-                        <h1 className="text-2xl font-(--font-poppins) bg-linear-to-r 
+                        <h1 className="text-2xl font-bold font-poppins bg-linear-to-r 
                             from-(--app-accent) to-(--app-accent-alt) bg-clip-text text-transparent 
                             drop-shadow-sm"
                         >
                                 Halfian
                         </h1>
                     </div>                
-                    <ul className="hidden md:flex gap-8 font-(--font-inter) text-(--app-fg) transition-colors duration-200">
+                    <ul className="hidden md:flex gap-8 font-semibold font-inter text-(--app-fg) transition-colors duration-200">
                         <li><a href="#hero" className="hover:text-(--app-accent)">Home</a></li>
                         <li><a href="#techstack" className="hover:text-(--app-accent)">Tech Stack</a></li>
                         <li><a href="#projects" className="hover:text-(--app-accent)">Projects</a></li>
@@ -62,7 +62,7 @@ export default function Navbar() {
                         </button>
                     </div>
 
-                    <div className="flex flex-col items-center gap-6 py-20 font-(--font-inter) text-(--app-accent)">
+                    <div className="flex flex-col items-center gap-6 py-20 font-semibold font-inter text-(--app-accent)">
                         <a href="#hero" onClick={() => setIsOpen(false)}>Home</a>
                         <a href="#techstack" onClick={() => setIsOpen(false)}>Tech Stack</a>
                         <a href="#projects" onClick={() => setIsOpen(false)}>Projects</a>

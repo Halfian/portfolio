@@ -16,7 +16,7 @@ export default function TechStack() {
 
     return (
         <section id="techstack" className="px-25 py-20 bg-(--app-card) text-center scroll-mt-28">
-            <h2 className="text-3xl text-(--app-fg) mb-8 font-(--font-poppins)">
+            <h2 className="text-3xl text-(--app-fg) mb-8 font-bold font-poppins">
                 Tech Stack
             </h2>
             <div className="flex flex-wrap justify-center gap-8">
@@ -34,7 +34,7 @@ export default function TechStack() {
                             <span className="text-xl flex items-center justify-center w-8 h-8 rounded-full 
                             bg-(--app-card) shadow">{skill.logo}</span>
                         )}
-                        <span className="font-(--font-inter) text-white">{skill.name}</span>
+                        <span className="font-inter text-white">{skill.name}</span>
                     </div>
                 ))}
             </div>

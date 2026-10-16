@@ -40,29 +40,29 @@ export default function Hero() {
             </div>
 
             {/* Foreground photo */}
-            <div className="relative z-20 md:order-first flex items-center justify-center w-[20rem] 
-                h-80 md:w-88 md:h-88 lg:w-96 lg:h-96 cursor-pointer">
+            <div className="relative z-20 md:order-first flex items-center justify-center w-80 
+                h-80 md:w-88 md:h-88 lg:w-96 lg:h-96 aspect-square shrink-0 cursor-pointer">
                 <img
                 src="/IMG_3519.webp"
                 alt="Photo of Halfian, frontend developer"
                 className="w-full h-full rounded-full shadow-[0_0_40px_rgba(255,255,255,0.2)] 
-                    object-cover object-top border-4 border-white"
+                    object-cover object-top border-4 border-white overflow-hidden"
                 />
             </div>            
 
             {/* Text block */}
             <div className="text-center mt-20 md:text-left max-w-xl relative z-20 md:ml-40 md:mt-10">
-                <h1 className="text-5xl font-(--font-poppins) bg-linear-to-r from-(--app-accent) to-(--app-fg) bg-clip-text text-transparent drop-shadow-md">
+                <h1 className="text-5xl font-poppins font-bold bg-linear-to-r from-(--app-accent) to-(--app-fg) bg-clip-text text-transparent drop-shadow-md">
                 Hi, I'm Halfian
                 </h1>
-                <h2 className="text-2xl text-(--app-fg) font-(--font-poppins) tracking-wide mt-3 drop-shadow-sm">
+                <h2 className="text-2xl text-(--app-fg) font-semibold font-poppins tracking-wide mt-3 drop-shadow-sm">
                 Frontend Developer
                 </h2>
-                <p className="text-gray-500 italic mt-4 font-(--font-inter)">
+                <p className="text-gray-500 italic mt-4 font-inter">
                 Web developer passionate about building clean, scalable, and responsive web apps.
                 </p>
                 <a href="#projects" 
-                className="mt-6 inline-block px-6 py-3 bg-linear-to-r from-(--app-accent) to-(--app-accent-alt) text-white rounded-lg font-(--font-poppins) hover:from-(--app-accent-alt) hover:to-(--app-accent) hover:scale-105 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-(--app-accent) transition-all duration-300 ease-in-out"
+                className="mt-6 inline-block px-6 py-3 bg-linear-to-r from-(--app-accent) to-(--app-accent-alt) text-white rounded-lg font-semibold font-poppins hover:from-(--app-accent-alt) hover:to-(--app-accent) hover:scale-105 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-(--app-accent) transition-all duration-300 ease-in-out"
                 aria-label="View my projects"
                 >
                 View My Work

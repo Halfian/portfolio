@@ -16,9 +16,6 @@ html {
   --hero-top: #bae6fd;   /* sky-200 */
   --hero-mid: #e0f2fe;   /* sky-100 */
   --hero-bottom: #fef9c3; /* Warm sunlight yellow-100 */
-
-  --font-poppins: Poppins, sans-serif;
-  --font-inter: Inter, sans-serif;
 }
 
 /* Manual toggle via .dark class */
@@ -33,9 +30,11 @@ html {
   --hero-top: #0f172a;    /* Deep navy */
   --hero-mid: #1e293b;    /* Slate */
   --hero-bottom: #111827; /* Black Horizon */
+}
 
-  --font-poppins: Poppins, sans-serif;
-  --font-inter: Inter, sans-serif;
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+  --font-inter: "Inter", sans-serif;
 }
 
 @keyframes cloudMove {

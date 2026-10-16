@@ -15,23 +15,23 @@ export default function About() {
                 <img src="/IMG_4311.webp" alt="Halfian photo" className="w-full h-full object-cover rounded-full" />
             </div>
             <div className="relative z-10 max-w-xl">
-                <h2 className="text-4xl font-(--font-poppins) bg-linear-to-r 
+                <h2 className="text-4xl font-bold font-poppins bg-linear-to-r 
                     from-(--app-accent) to-(--app-bg) text-transparent bg-clip-text drop-shadow-sm mb-6">
                     About Me
                 </h2>
-                <p className="text-(--app-fg) font-(--font-inter) leading-relaxed mb-4">
+                <p className="text-(--app-fg)/80 font-inter leading-relaxed max-w-2xl text-base md:text-lg mb-6">
                     I'm Halfian, a frontend developer passionate about building clean,
                     scalable, and user friendly web apps. With expertise in React, Zustand,
                     Vite, and TailwindCSS, I focus on crafting modern interfaces that
                     balance originality with professionalism.
                 </p>
-                <p className="text-(--app-fg) font-(--font-inter) leading-relaxed mb-4">
+                <p className="text-(--app-fg)/80 font-inter leading-relaxed max-w-2xl text-base md:text-lg mb-6">
                     Beyond coding, I enjoy iterating on design details — from font pairings
                     to subtle background patterns — to ensure every project feels polished
                     and approachable.
                 </p>
                 <a href="#contact"
-                    className="inline-block mt-6 px-6 py-3 bg-linear-to-r from-(--app-accent) to-(--app-bg) text-(--app-fg) rounded-lg font-(--font-poppins) hover:from-(--app-bg) hover:to-(--app-accent) transition-colors duration-200"
+                    className="inline-block mt-6 px-6 py-3 bg-linear-to-r from-(--app-accent) to-(--app-bg) text-(--app-fg) rounded-lg font-bold font-poppins hover:from-(--app-bg) hover:to-(--app-accent) transition-colors duration-200"
                 >Get in Touch</a>
             </div>
         </section>
